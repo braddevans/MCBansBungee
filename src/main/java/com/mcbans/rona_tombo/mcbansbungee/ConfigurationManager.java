@@ -33,7 +33,7 @@ public class ConfigurationManager{
 		this.plugin = plugin;
 		this.log = plugin.getLog();
 
-		this.pluginDir = this.plugin.getDataFolder();
+		this.pluginDir = plugin.getDataFolder();
 	}
 
 	/**
