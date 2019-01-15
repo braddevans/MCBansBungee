@@ -65,20 +65,20 @@ Misc Commands
 Permissions
 --------
 
-* mcbans.admin (default: op) - Admin privileges to mcbans
-* mcbans.ban.global (default: op) - Allow global ban player
-* mcbans.ban.local (default: op) - Allow local ban player
-* mcbans.ban.temp (default: op) - Allow temp ban player
-* mcbans.ban.ip (default: op) - Allow use banip command
-* mcbans.ban.exempt (default: op) - Permission to exempt from bans
-* mcbans.unban (default: op) - Allow unban player
-* mcbans.view.alts (default: op) - Show notification of a players alts on connect
-* mcbans.view.bans (default: op) - Show previous ban information on player connect
-* mcbans.view.staff (default: true) - Show notification of a mcbans staff on connect
-* mcbans.hideview (default: false) - Hide player view alts/previous bans on connect
-* mcbans.lookup.player (default: op) - Allow lookup player ban history
-* mcbans.lookup.ban (default: op) - Allow lookup ban details
-* mcbans.lookup.alt (default: op) - Allow lookup alt account
-* mcbans.kick (default: op) - Allow kick player
-* mcbans.kick.exempt (default: op) - Permission to exempt from kicks
-* mcbans.maxalts.exempt (default: op) - Permission to exempt from max alt account disconnect
+* mcbans.admin - Admin privileges to mcbans
+* mcbans.ban.global - Allow global ban player
+* mcbans.ban.local - Allow local ban player
+* mcbans.ban.temp - Allow temp ban player
+* mcbans.ban.ip - Allow use banip command
+* mcbans.ban.exempt - Permission to exempt from bans
+* mcbans.unban - Allow unban player
+* mcbans.view.alts - Show notification of a players alts on connect
+* mcbans.view.bans - Show previous ban information on player connect
+* mcbans.view.staff - Show notification of a mcbans staff on connect
+* mcbans.hideview - Hide player view alts/previous bans on connect
+* mcbans.lookup.player - Allow lookup player ban history
+* mcbans.lookup.ban - Allow lookup ban details
+* mcbans.lookup.alt - Allow lookup alt account
+* mcbans.kick - Allow kick player
+* mcbans.kick.exempt - Permission to exempt from kicks
+* mcbans.maxalts.exempt - Permission to exempt from max alt account disconnect
