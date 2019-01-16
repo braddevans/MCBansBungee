@@ -6,7 +6,7 @@ import com.mcbans.rona_tombo.mcbansbungee.request.LookupRequest;
 import net.md_5.bungee.api.CommandSender;
 
 public class CommandLookup extends BaseCommand{
-	public CommandLookup(){
+	CommandLookup(){
 		bePlayer = false;
 		argLength = 1;
 		banning = true;

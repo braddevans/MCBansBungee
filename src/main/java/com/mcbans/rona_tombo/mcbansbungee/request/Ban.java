@@ -343,7 +343,7 @@ public class Ban implements Runnable{
 		if(actionData != null){
 			url_items.put("actionData", actionData.toString());
 		}
-		url_items.put("exec", "temBan");
+		url_items.put("exec", "tempBan");
 		HashMap<String, String> response = webHandler.mainRequest(url_items);
 		try{
 			if(response.containsKey("error")){

@@ -9,7 +9,7 @@ public enum CommandType{
 	UNBAN(new CommandUnban()),
 	TEMPBAN(new CommandTempban()),
 	BANIP(new CommandBanip()),
-	LOOKUP(new CommandBanlookup()),
+	LOOKUP(new CommandLookup()),
 	BANLOOKUP(new CommandBanlookup()),
 	ALTLOOKUP(new CommandAltlookup()),
 	MCBANS(new CommandMCBans()),

@@ -1,6 +1,5 @@
 package com.mcbans.rona_tombo.mcbansbungee.api.data;
 
-import com.mcbans.rona_tombo.mcbansbungee.util.Util;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -8,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlayerLookupData{
-	private String name;
+	private String name = "";
 	private int total = 0;
 	private double reputation = 10.0D;
 
@@ -25,13 +24,8 @@ public class PlayerLookupData{
 		if(response.has("player")){
 			this.name = response.getString("player");
 		}
-		if(Util.isInteger(response.getString("total").trim())){
-			total = Integer.parseInt(response.getString("total").trim());
-		}
-
-		if(Util.isDouble(response.getString("reputation").trim())){
-			reputation = Double.parseDouble(response.getString("reputation").trim());
-		}
+		total = response.getInt("total");
+		reputation = response.getDouble("reputation");
 		if(response.getJSONArray("global").length() > 0){
 			for(int v = 0; v < response.getJSONArray("global").length(); v++){
 				global.add(response.getJSONArray("global").getString(v));

@@ -14,6 +14,7 @@ public class BanLookupRequest extends BaseRequest<BanLookupCallback>{
 	public BanLookupRequest(final MCBansBungee plugin, final BanLookupCallback callback, final int banID){
 		super(plugin, callback);
 		items.put("ban", String.valueOf(banID));
+		items.put("exec", "banLookup");
 
 		this.banID = banID;
 	}

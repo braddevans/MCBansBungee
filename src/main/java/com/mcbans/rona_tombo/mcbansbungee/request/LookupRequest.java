@@ -42,7 +42,7 @@ public class LookupRequest extends BaseRequest<LookupCallback>{
 			log.info(callback.getSender().getName() + " has looked up the " + targetName + "!");
 		}
 
-		JSONObject result = this.request_JOBJ();
+		JSONObject result = request_JOBJ();
 
 		try{
 			callback.success(new PlayerLookupData(targetName, result));
