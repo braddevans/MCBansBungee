@@ -1,0 +1,5 @@
+name: MCBansBungee
+version: 1.0.2
+main: com.mcbans.rona_tombo.mcbansbungee.MCBansBungee
+description: The MCBans Plugin Custumized For BungeeCord
+author: rona_tombo
