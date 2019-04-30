@@ -34,5 +34,5 @@ processResources {
 jar {
     from { configurations.extraLibs.collect { it.isDirectory() ? it : zipTree(it) } }
     from sourceSets.test.output
-    exclude 'META-INF/.RSA', 'META-INF/.SF','META-INF/*.DSA'
+    exclude 'META-INF/.RSA', 'META-INF', 'META-INF/.SF','META-INF/*.DSA'
 }
