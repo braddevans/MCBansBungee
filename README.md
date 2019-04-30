@@ -1,5 +1,7 @@
 MCBans Server Plugin for BungeeCord
-Author rona_tombo
+
+Author rona_tombo | braddevans
+![mcbansBungeecordBanImage](https://raw.githubusercontent.com/braddevans/MCBansBungee/master/McBansBungeecord.png)
 
 This plugin corresponds to BungeeCord with the MCBans plugin developed by Firestarthe, Syamn, Corpdraco.
 This description is almost identical to that of the MCBans plug-in.
