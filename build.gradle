@@ -14,14 +14,25 @@ repositories {
     maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
 }
 
+configurations {
+    // configuration that holds jars to copy into lib
+    extraLibs
+}
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     //compile group: 'net.md-5', name: 'bungeecord-api', version: '1.8-SNAPSHOT'
     compile group: 'org.projectlombok', name: 'lombok', version: '1.16.2'
-    compile files('lib/json-20180813.jar')
+    extraLibs files('lib/json-20180813.jar')
     compile fileTree(dir: 'lib', include: '*.jar')
 }
 
 processResources {
     expand project.properties
+}
+
+jar {
+    from { configurations.extraLibs.collect { it.isDirectory() ? it : zipTree(it) } }
+    from sourceSets.test.output
+    exclude 'META-INF/.RSA', 'META-INF/.SF','META-INF/*.DSA'
 }
